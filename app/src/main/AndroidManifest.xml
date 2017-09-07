@@ -7,7 +7,7 @@
 
     <uses-feature
         android:name="android:hardware.camera2"
-        android:required="false"/>
+        android:required="false" />
 
     <application
         android:name=".PlatzigramApplication"
@@ -17,20 +17,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <meta-data android:name="com.facebook.sdk.ApplicationId"
-            android:value="@string/facebook_app_id"/>
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
 
         <provider
-            android:authorities="com.platzi.platzigram"
             android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.platzi.platzigram"
             android:exported="false"
             android:grantUriPermissions="true">
-
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/file_path"/>
-
+                android:resource="@xml/file_path" />
         </provider>
 
         <activity android:name=".login.view.LoginActivity">
@@ -55,7 +53,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".view.ContainerActivity" />
         </activity>
-        <activity android:name=".post.view.NewPostActivity"></activity>
+        <activity android:name=".post.view.NewPostActivity" />
+        <activity android:name=".ButterKnifeActivity"></activity>
     </application>
 
 </manifest>
